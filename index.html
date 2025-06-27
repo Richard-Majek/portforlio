@@ -7,77 +7,102 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
+      <button class="toggle-mode" id="toggleDark">🌙 Toggle Mode</button>
+      <img src="image.jpg" alt="Richard Majekodunmi" class="profile-img" />
       <h1>Richard Majekodunmi</h1>
-      <p>Linux Administrator | DevOps Engineer | Cloud Engineer</p>
-      <a href="mailto:richardmajek02@gmail.com" class="btn">Get In Touch</a>
+      <div class="skills-bar">
+        <span>U.S. Army Veteran</span>
+        <span>Linux Engineer</span>
+        <span>Cloud Engineer</span>
+        <span>DevOps Engineer</span>
+        <span>Podman</span>
+        <span>Security+</span>
+        <span>Terraform</span>
+        <span>Security Hub</span>
+        <span>Guard Duty</span>
+        <span>CloudFormation</span>
+        <span>Jenkins</span>
+        <span>GitLab</span>
+        <span>GitHub</span>
+        <span>AWS</span>
+        <span>AWS GovCloud</span>
+        <span>VMware</span>
+        <span>CI/CD</span>
+        <span>Ansible</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>Active Clearance</span>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:richardmajek02@gmail.com">richardmajek02@gmail.com</a> |
+        <span>(763) 313-5802</span> |
+        <a href="https://www.linkedin.com/in/richard-majek-62379b326/" target="_blank">LinkedIn</a> |
+        <a href="RichardResume.pdf" download>Download Resume</a>
+      </div>
     </div>
   </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>
-      I’m a dynamic IT professional with 6+ years of experience managing infrastructure,
-      cloud platforms, and CI/CD workflows. I've led AWS migrations, automated pipelines,
-      and deployed scalable solutions in Linux environments.
-    </p>
-  </section>
+  <main class="container light-section">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Cloud and DevOps Engineer with over 6 years of experience deploying, automating, and maintaining secure infrastructure across Linux and AWS environments. Skilled in managing container platforms, streamlining CI/CD pipelines, and implementing Infrastructure as Code using Terraform and Ansible. Strong background in cloud security, monitoring, and high-availability system design using tools like Kubernetes, Jenkins, GitLab, and AWS-native services. Proven ability to improve deployment efficiency and ensure system reliability across hybrid and cloud-native architectures.
+      </p>
+    </section>
 
-  <section class="skills container">
-    <h2>Technical Skills</h2>
-    <div class="grid">
-      <div>
-        <h3>DevOps & Cloud</h3>
-        <ul>
-          <li>AWS, Azure, GovCloud</li>
-          <li>Terraform, CloudFormation</li>
-          <li>Kubernetes, Docker, Podman</li>
-          <li>Jenkins, GitHub Actions</li>
-        </ul>
+    <section class="skills">
+      <h2>Technical Skills & Certifications</h2>
+      <div class="grid">
+        <div>
+          <h3>DevOps & Cloud</h3>
+          <ul>
+            <li>AWS, Azure, GovCloud</li>
+            <li>Terraform, CloudFormation</li>
+            <li>Kubernetes, Docker, Podman</li>
+            <li>Jenkins, GitHub Actions</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Automation & Tools</h3>
+          <ul>
+            <li>Ansible, Bash, Git/GitHub</li>
+            <li>Nexus, Maven, SonarQube</li>
+            <li>CI/CD, SDLC, Agile</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Monitoring & Security</h3>
+          <ul>
+            <li>AWS GuardDuty, Security Hub</li>
+            <li>CloudWatch, Logging</li>
+            <li>IAM, Network Security</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Certified Kubernetes Administrator (CKA)</li>
+            <li>CompTIA Security+, A+</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h3>Automation & Tools</h3>
-        <ul>
-          <li>Ansible, Bash, Git/GitHub</li>
-          <li>Nexus, Maven, SonarQube</li>
-          <li>CI/CD, SDLC, Agile</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Monitoring & Security</h3>
-        <ul>
-          <li>AWS GuardDuty, Security Hub</li>
-          <li>CloudWatch, Logging</li>
-          <li>IAM, Network Security</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section class="experience container">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Cloud Engineer</strong> @ DR Financial Services (2023–Present)</li>
-      <li><strong>DevOps Engineer</strong> @ iCare Medical (2019–2023)</li>
-      <li><strong>Linux Admin</strong> @ Data Service Group INC (2018–2019)</li>
-      <li><strong>Logistics & Data Specialist</strong> @ U.S. Army + Hutchinson Tech</li>
-    </ul>
-  </section>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Richard Majekodunmi. All rights reserved.</p>
+  </div>
+</footer>
 
-  <section class="certifications container">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Certified Kubernetes Administrator (CKA)</li>
-      <li>CompTIA Security+, A+</li>
-    </ul>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Richard Majekodunmi • <a href="mailto:richardmajek02@gmail.com">Email Me</a></p>
-    </div>
-  </footer>
+  <script>
+    document.getElementById('toggleDark').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
+
