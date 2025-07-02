@@ -141,26 +141,37 @@ footer {
   color: #ffc107;
 }
 
+/* Projects Section */
 .projects {
   background: white;
-  margin: 20px 0;
-  padding: 20px;
+  padding: 30px 20px;
+  margin-top: 30px;
   border-radius: 8px;
 }
 
 .projects h2 {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
   margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 22px;
 }
 
 .project-list {
   list-style: disc;
   padding-left: 20px;
+  line-height: 1.7;
 }
 
 .project-list li {
-  margin-bottom: 15px;
-  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.project-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
 }
 
